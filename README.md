@@ -3,6 +3,7 @@
 补充arToken参数与arDnsCheck参数后运行即可。
 
 如需获取公网Ipv4地址，在arLanIp4()函数中补充LanIps的定义域即可。
+···
 arLanIp4() {
     local lanIps="^$"
     lanIps="$lanIps|(^10\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$)"            # RFC1918
@@ -31,7 +32,7 @@ arLanIp4() {
     
     echo $lanIps
 }
-
+···
 # ArDNSPod
 
 基于 DNSPod 用户 API 实现的纯 Shell 动态域名客户端。
